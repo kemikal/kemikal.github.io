@@ -12,18 +12,19 @@ body {
     
 }
 
-#container {
+.container {
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
    margin-top: 20px;
    
 }
 
-#content{
+.content{
     color: aliceblue;
     max-width: 600px;
-   
+   margin-bottom: 40px;
 }
 
 a {
@@ -34,21 +35,36 @@ a {
     text-decoration: none;
 }
 
-#textbox {
+.textbox {
     font-family: 'Roboto Condensed', sans-serif;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
     padding-top: 20px; 
 }
 
 #planets {
+    margin:auto;
+    text-align: center;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-   margin-top: 50px;
+   padding-bottom: 150px;
+   max-width: 800px; 
    
 }
 
 .planet img {
     width:40%;  
 }
+
+#sat {
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+   margin-top: 50px;
+   max-width: 800px; 
+   margin-bottom:40px;
+}
+
