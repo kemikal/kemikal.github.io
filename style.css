@@ -21,6 +21,24 @@ body {
    
 }
 
+#githubrepos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.githubrepo {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid gold;
+    margin: 5px;
+}
+
+.githubrepo:hover {
+    border: 1px solid red;
+}
+
 .content{
     color: aliceblue;
     max-width: 600px;

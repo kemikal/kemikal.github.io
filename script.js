@@ -1,5 +1,23 @@
 console.log("Circle cirlcle nothing to see here!");
 
+
+fetch("https://api.github.com/users/kemikal/repos")
+.then(function(response) {
+    return response.json();       
+})
+.then(function(json) { 
+
+console.log("github API", json);
+
+var githubrepos = document.getElementById("githubrepos");
+
+
+for (i=0; i<json.length; i++) {
+    githubrepos.insertAdjacentHTML("beforeend", "<a href='"+ json[i].html_url +"' target='_blank'><div class='githubrepo'>" + json[i].name + "</div></a>")
+}
+
+});
+
 var planet1 = document.getElementById("planet1");
 var planet2 = document.getElementById("planet2");
 var planet3 = document.getElementById("planet3");
